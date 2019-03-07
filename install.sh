@@ -7,6 +7,6 @@ chmod 755 /config/.acme.sh/acme.sh
 
 for file in common.sh setup.sh pre-hook.sh post-hook.sh reloadcmd.sh
 do
-    curl -o "/config/scripts/ubnt-letsencrypt/$file" "https://raw.githubusercontent.com/dotsam/ubnt-letsencrypt/use-hooks/$file"
+    curl -o "/config/scripts/ubnt-letsencrypt/$file" "https://raw.githubusercontent.com/coltoncat/ubnt-letsencrypt/master/$file"
     chmod 755 /config/scripts/ubnt-letsencrypt/$file
 done
